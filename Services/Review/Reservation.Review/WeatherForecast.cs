@@ -1,4 +1,4 @@
-namespace Reservation.Booking
+namespace Reservation.Review
 {
     public class WeatherForecast
     {

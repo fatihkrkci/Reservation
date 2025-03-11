@@ -1,7 +1,12 @@
-﻿namespace Reservation.Booking.Entities
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Reservation.Booking.Entities
 {
     public class Category
     {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public string CategoryId { get; set; }
         public string CategoryName { get; set; }
     }
