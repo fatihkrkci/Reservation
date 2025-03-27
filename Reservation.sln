@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hotels", "Hotels", "{DA7028
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Hotels", "Services\Hotels\Reservation.Hotels\Reservation.Hotels.csproj", "{C3249372-3D79-4AF6-B640-D921B444FA47}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{72039EFC-D3ED-4CDE-92FF-DDFB29F64684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Basket", "Services\Basket\Reservation.Basket\Reservation.Basket.csproj", "{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{C3249372-3D79-4AF6-B640-D921B444FA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3249372-3D79-4AF6-B640-D921B444FA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3249372-3D79-4AF6-B640-D921B444FA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +63,7 @@ Global
 		{40A3B82E-DF47-4CB9-866D-21D92EF80D6D} = {3ADAF66E-DD5F-4A85-8B3D-7C498E57F9D9}
 		{DA702866-D852-4091-8190-D3746222E9D6} = {7EECF054-9CC6-4814-AC7A-45AE2780F691}
 		{C3249372-3D79-4AF6-B640-D921B444FA47} = {DA702866-D852-4091-8190-D3746222E9D6}
+		{72039EFC-D3ED-4CDE-92FF-DDFB29F64684} = {7EECF054-9CC6-4814-AC7A-45AE2780F691}
+		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E} = {72039EFC-D3ED-4CDE-92FF-DDFB29F64684}
 	EndGlobalSection
 EndGlobal
