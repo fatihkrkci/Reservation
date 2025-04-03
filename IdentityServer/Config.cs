@@ -19,6 +19,7 @@ namespace IdentityServer
             new ApiResource("ResourcePayment"){ Scopes = { "PaymentFullPermission" } },
             new ApiResource("ResourceBasket"){ Scopes = { "BasketFullPermission" } },
             new ApiResource("ResourceMessage"){ Scopes = { "MessageFullPermission" } },
+            new ApiResource("ResourceOcelot"){ Scopes = { "OcelotFullPermission" } },
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -38,6 +39,7 @@ namespace IdentityServer
             new ApiScope("PaymentFullPermission", "Full Authority For Payment Operations"),
             new ApiScope("BasketFullPermission", "Full Authority For Basket Operations"),
             new ApiScope("MessageFullPermission", "Full Authority For Message Operations"),
+            new ApiScope("OcelotFullPermission", "Full Authority For Ocelot Operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -50,7 +52,7 @@ namespace IdentityServer
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = { new Secret("reservationsecret".Sha256()) },
                 AccessTokenLifetime = 600,
-                AllowedScopes = { "BookingReadPermission" },
+                AllowedScopes = { "BookingReadPermission", "OcelotFullPermission" },
                 AllowAccessTokensViaBrowser = true
             },
 
@@ -60,7 +62,7 @@ namespace IdentityServer
                 ClientName = "Reservation Admin User",
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 ClientSecrets = { new Secret("reservationsecret".Sha256()) },
-                AllowedScopes = { "BookingReadPermission", "BookingFullPermission", "BookingUpdatePermission", "ReviewFullPermission", "PaymentFullPermission", "BasketFullPermission", "MessageFullPermission",
+                AllowedScopes = { "BookingReadPermission", "BookingFullPermission", "BookingUpdatePermission", "ReviewFullPermission", "PaymentFullPermission", "BasketFullPermission", "MessageFullPermission", "OcelotFullPermission", 
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.Email,
                 IdentityServerConstants.StandardScopes.OpenId,

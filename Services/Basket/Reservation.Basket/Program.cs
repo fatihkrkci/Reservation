@@ -5,12 +5,15 @@ using Microsoft.Extensions.Options;
 using Reservation.Basket.LoginServices;
 using Reservation.Basket.Services;
 using Reservation.Basket.Settings;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {

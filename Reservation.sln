@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{72039E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Basket", "Services\Basket\Reservation.Basket\Reservation.Basket.csproj", "{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{EF440B3B-85A3-420B-84B2-FD2CE6171303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.ApiGateway", "ApiGateway\Reservation.ApiGateway\Reservation.ApiGateway.csproj", "{5741D714-4008-4030-8A13-6858B06C4152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5741D714-4008-4030-8A13-6858B06C4152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5741D714-4008-4030-8A13-6858B06C4152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5741D714-4008-4030-8A13-6858B06C4152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5741D714-4008-4030-8A13-6858B06C4152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +73,6 @@ Global
 		{C3249372-3D79-4AF6-B640-D921B444FA47} = {DA702866-D852-4091-8190-D3746222E9D6}
 		{72039EFC-D3ED-4CDE-92FF-DDFB29F64684} = {7EECF054-9CC6-4814-AC7A-45AE2780F691}
 		{7D09B326-F8CE-476B-84F1-33A5BA5F9E1E} = {72039EFC-D3ED-4CDE-92FF-DDFB29F64684}
+		{5741D714-4008-4030-8A13-6858B06C4152} = {EF440B3B-85A3-420B-84B2-FD2CE6171303}
 	EndGlobalSection
 EndGlobal
